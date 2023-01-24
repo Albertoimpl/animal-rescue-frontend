@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: my-apps
+
+resources:
+  - config/workload.yaml
+  - config/test-pipeline.yaml
+  - k8s/animal-rescue-frontend-mapping.yaml
+  - k8s/animal-rescue-frontend-route-config.yaml
